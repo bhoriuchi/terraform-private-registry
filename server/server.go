@@ -34,7 +34,16 @@ func (c *Server) Start() {
 	var absKey string
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
-	r.Get("/.well-known/terraform.json", handlers.HandleDiscovery)
+
+	// Terraform discovery
+	r.Get("/.well-known/terraform.json", handlers.GetDiscovery)
+
+	// Main provider route
+	r.Route("/v1/providers/{namespace}/{type}", func(r chi.Router) {
+		r.Get("/versions", handlers.ListVersions)
+		r.Get("/{version}/download/{os}/{arch}", handlers.GetDownload)
+	})
+
 	r.Get("/*", func(w http.ResponseWriter, r *http.Request) {
 		redirectURL := JoinURL(`https://registry.terraform.io`, r.URL.Path)
 		http.Redirect(w, r, redirectURL, 301)

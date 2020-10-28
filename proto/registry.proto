@@ -1,0 +1,73 @@
+syntax = "proto3";
+package registry.terraform;
+
+// import "google/protobuf/wrappers.proto";
+
+service Registry {
+  rpc GetDiscovery(Empty) returns (Discovery) {}
+}
+
+message Empty {}
+
+message Discovery {
+  string ProvidersV1 = 1 [json_name="providers.v1"];
+  string ModulesV1 = 2 [json_name="modules.v1"];
+}
+
+message Platform {
+  string OperatingSystem = 1 [json_name="os"];
+  string Architecture = 2 [json_name="arch"];
+}
+
+message ProviderVersionListEntry {
+  string Version = 1 [json_name="version"];
+  repeated string Protocols = 2 [json_name="protocols"];
+  repeated Platform Platforms = 3 [json_name="platforms"];
+}
+
+message ProviderVersionList {
+  string ID = 1 [json_name="id"];
+  repeated ProviderVersionListEntry Versions = 2 [json_name="versions"];
+  repeated string Warnings = 3 [json_name="warnings"];
+}
+
+message ProviderVersion {
+  string ID = 1 [json_name="id"];
+  string Owner = 2 [json_name="owner"];
+  string Namespace = 3 [json_name="namespace"];
+  string Name = 4 [json_name="name"];
+  string Alias = 5 [json_name="alias"];
+  string Version = 6 [json_name="version"];
+  string Tag = 7 [json_name="tag"];
+  string Description = 8 [json_name="description"];
+  string Source = 9 [json_name="source"];
+  string PublishedAt = 10 [json_name="published_at"];
+  int64 Downloads = 11 [json_name="downloads"];
+  string Tier = 12 [json_name="tier"];
+  repeated string Versions = 13 [json_name="versions"];
+  repeated string Docs = 14 [json_name="docs"];
+}
+
+message GPGPublicKeys {
+  string KeyID = 1 [json_name="key_id"];
+  string AsciiArmor = 2 [json_name="ascii_armor"];
+  string TrustSignature = 3 [json_name="trust_signature"];
+  string Source = 4 [json_name="source"];
+  string SourceURL = 5 [json_name="source_url"];
+}
+
+message SigningKeys {
+  repeated GPGPublicKeys GPGPublicKeys = 1 [json_name="gpg_public_keys"];
+}
+
+message ProviderDownload {
+  repeated string Protocols = 1 [json_name="protocols"];
+  string OperatingSystem = 2 [json_name="os"];
+  string Architecture = 3 [json_name="arch"];
+  string Filename = 4 [json_name="filename"];
+  string DownloadURL = 5 [json_name="download_url"];
+  string ShasumsURL = 6 [json_name="shasums_url"];
+  string ShasumsSignatureURL = 7 [json_name="shasums_signature_url"];
+  string Shasum = 8 [json_name="shasum"];
+  SigningKeys SigningKeys = 9 [json_name="signing_keys"];
+}

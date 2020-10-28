@@ -1,0 +1,104 @@
+2020/10/27 05:55:58 [INFO] Terraform version: 0.12.23  
+2020/10/27 05:55:58 [INFO] Go runtime version: go1.12.13
+2020/10/27 05:55:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "init"}
+2020/10/27 05:55:58 [DEBUG] Attempting to open CLI config file: /Users/branden.horiuchi/.terraformrc
+2020/10/27 05:55:58 Loading CLI configuration from /Users/branden.horiuchi/.terraformrc
+2020/10/27 05:55:58 [DEBUG] checking for credentials in "/Users/branden.horiuchi/.terraform.d/plugins"
+2020/10/27 05:55:58 [DEBUG] checking for credentials in "/Users/branden.horiuchi/.terraform.d/plugins/darwin_amd64"
+2020/10/27 05:55:58 [INFO] CLI command args: []string{"init"}
+2020/10/27 05:55:58 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/10/27 05:55:58 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/10/27 05:55:58 [DEBUG] New state was assigned lineage "76af7400-a6a3-d434-086f-271485d0fe2e"
+2020/10/27 05:55:58 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/10/27 05:55:58 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/10/27 05:55:58 [DEBUG] checking for provider in "."
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/usr/local/bin"
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/Users/branden.horiuchi/.terraform.d/plugins"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-activedirectory"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-ad"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-chef"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-dns"
+2020/10/27 05:55:58 [DEBUG] found provider "terraform-provider-gitlab_v1.2.0_x4"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-launchpad"
+2020/10/27 05:55:58 [DEBUG] found provider "terraform-provider-utility_v0.1.0_x4"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-utils"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-virtualbox"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-windows-dns"
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/Users/branden.horiuchi/.terraform.d/plugins/darwin_amd64"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "launchpad", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-launchpad"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "ad", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-ad"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "gitlab", "1.2.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-gitlab_v1.2.0_x4"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "utils", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-utils"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "virtualbox", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-virtualbox"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "dns", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-dns"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "utility", "0.1.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-utility_v0.1.0_x4"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "activedirectory", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-activedirectory"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "chef", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-chef"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "windows-dns", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-windows-dns"
+2020/10/27 05:55:58 [DEBUG] checking for provisioner in "."
+2020/10/27 05:55:58 [DEBUG] checking for provisioner in "/usr/local/bin"
+2020/10/27 05:55:58 [DEBUG] checking for provisioner in "/Users/branden.horiuchi/.terraform.d/plugins"
+2020/10/27 05:55:58 [DEBUG] checking for provisioner in "/Users/branden.horiuchi/.terraform.d/plugins/darwin_amd64"
+2020/10/27 05:55:58 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2020/10/27 05:55:58 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/10/27 05:55:58 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/10/27 05:55:58 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2020/10/27 05:55:58 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/10/27 05:55:58 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/10/27 05:55:58 [DEBUG] checking for provider in "."
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/usr/local/bin"
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/Users/branden.horiuchi/.terraform.d/plugins"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-activedirectory"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-ad"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-chef"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-dns"
+2020/10/27 05:55:58 [DEBUG] found provider "terraform-provider-gitlab_v1.2.0_x4"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-launchpad"
+2020/10/27 05:55:58 [DEBUG] found provider "terraform-provider-utility_v0.1.0_x4"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-utils"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-virtualbox"
+2020/10/27 05:55:58 [WARN] found legacy provider "terraform-provider-windows-dns"
+2020/10/27 05:55:58 [DEBUG] checking for provider in "/Users/branden.horiuchi/.terraform.d/plugins/darwin_amd64"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "windows-dns", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-windows-dns"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "activedirectory", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-activedirectory"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "utility", "0.1.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-utility_v0.1.0_x4"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "ad", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-ad"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "gitlab", "1.2.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-gitlab_v1.2.0_x4"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "utils", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-utils"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "virtualbox", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-virtualbox"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "chef", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-chef"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "launchpad", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-launchpad"
+2020/10/27 05:55:58 [DEBUG] found valid plugin: "dns", "0.0.0", "/Users/branden.horiuchi/.terraform.d/plugins/terraform-provider-dns"
+2020/10/27 05:55:58 [DEBUG] plugin requirements: "foo"=">=2.1.0"
+2020/10/27 05:55:58 [DEBUG] fetching provider versions from "http://localhost:3000/v1/providers/-/foo/versions"
+2020/10/27 05:55:58 [TRACE] HTTP client GET request to http://localhost:3000/v1/providers/-/foo/versions
+2020/10/27 05:55:59 [TRACE] HTTP client GET request to http://localhost:3000/v1/providers/-/foo/versions
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x10 pc=0x190bd7a]
+
+goroutine 1 [running]:
+github.com/hashicorp/terraform/registry.maxRetryErrorHandler(0x0, 0x2f2df40, 0xc0005666f0, 0x2, 0x3, 0x3, 0x2f2df40)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/registry/client.go:422 +0xea
+github.com/hashicorp/go-retryablehttp.(*Client).Do(0xc0001b8780, 0xc000148650, 0x2a8cc54, 0x13, 0xc000584348)
+	/opt/teamcity-agent/work/9e329aa031982669/pkg/mod/github.com/hashicorp/go-retryablehttp@v0.5.2/client.go:452 +0x706
+github.com/hashicorp/terraform/registry.(*Client).TerraformProviderVersions(0xc00000cfe0, 0xc0005d6640, 0x0, 0x0, 0x0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/registry/client.go:305 +0x467
+github.com/hashicorp/terraform/plugin/discovery.(*ProviderInstaller).listProviderVersions(0xc00019e770, 0xc000042cb6, 0x3, 0x2a7362c, 0x1, 0x2a91705, 0x15, 0xc00005b470, 0xc00005b400, 0x0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/plugin/discovery/get.go:477 +0x7e
+github.com/hashicorp/terraform/plugin/discovery.(*ProviderInstaller).Get(0xc00019e770, 0xc000042cb6, 0x3, 0x2a7362c, 0x1, 0x2a91705, 0x15, 0xc0000b8068, 0x1, 0x1, ...)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/plugin/discovery/get.go:125 +0xde
+github.com/hashicorp/terraform/command.(*InitCommand).getProviders(0xc0004c4380, 0xc00019e8c0, 0x0, 0x0, 0xc0005aa000, 0x0, 0x0, 0x0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/command/init.go:530 +0x4c5
+github.com/hashicorp/terraform/command.(*InitCommand).Run(0xc0004c4380, 0xc00000c090, 0x0, 0x0, 0xc0002520c0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/command/init.go:347 +0x102d
+github.com/mitchellh/cli.(*CLI).Run(0xc0005c0280, 0xc0005c0280, 0xc00052dd90, 0x1)
+	/opt/teamcity-agent/work/9e329aa031982669/pkg/mod/github.com/mitchellh/cli@v1.0.0/cli.go:255 +0x1f1
+main.wrappedMain(0x0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/main.go:239 +0xc33
+main.realMain(0x0)
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/main.go:103 +0xb4
+main.main()
+	/opt/teamcity-agent/work/9e329aa031982669/src/github.com/hashicorp/terraform/main.go:39 +0x3b
